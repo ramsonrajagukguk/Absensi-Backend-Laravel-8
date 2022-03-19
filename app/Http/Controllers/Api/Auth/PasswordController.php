@@ -11,7 +11,7 @@ use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 class PasswordController extends Controller
 {
 
-    // use SendsPasswordResetEmails;
+    use SendsPasswordResetEmails;
     public function reset(Request $request)
     {
         $request->validate([
